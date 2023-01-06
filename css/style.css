@@ -1,0 +1,215 @@
+/* red-hat-display-500 - latin */
+@font-face {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""),
+    url("../fonts/red-hat-display-v14-latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/red-hat-display-v14-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* red-hat-display-700 - latin */
+@font-face {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""),
+    url("../fonts/red-hat-display-v14-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/red-hat-display-v14-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* red-hat-display-900 - latin */
+@font-face {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  src: local(""),
+    url("../fonts/red-hat-display-v14-latin-900.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/red-hat-display-v14-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  /* height: 100vh; */
+}
+body {
+  padding-top: 102px;
+  /* height: 100vh; */
+  font-family: "Red Hat Display", Tahoma, Geneva, Verdana, sans-serif;
+  color: #717fa6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  background-image: url("../images/bg-img.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: flex;
+}
+.container {
+}
+.main {
+  background: #ffffff;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+  border-radius: 20px;
+}
+.main__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main__img {
+  display: flex;
+  margin-bottom: 4.5rem;
+}
+.main__info {
+  width: 100%;
+  width: 354px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main__title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 37px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #1f2e55;
+  margin-bottom: 1.7rem;
+}
+.main__descr {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+
+  text-align: center;
+
+  color: #717fa6;
+  margin-bottom: 2rem;
+}
+.main__playlist {
+  background: #f7f9ff;
+  border-radius: 11px;
+  display: flex;
+  padding: 25px 24px;
+  align-items: center;
+  margin-bottom: 3.2rem;
+}
+.main__playlist--img {
+  margin-right: 2rem;
+}
+.mian__playlist--wrapper {
+  margin-right: 6.9rem;
+}
+.wrapper__title {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #1f2e55;
+  margin-bottom: 6px;
+}
+.wrapper__price {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #717fa6;
+}
+.main__playlist--link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration-line: underline;
+
+  color: #382ae1;
+  transition: all 0.3s;
+}
+.main__playlist--link:hover {
+  text-decoration: none;
+  color: #766cf1;
+}
+.btn {
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 20px;
+}
+.main__btn--pay {
+  padding: 15px 102px;
+  background: #382ae1;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+  border-radius: 11px;
+  color: #ffffff;
+  margin-bottom: 3.2rem;
+  transition: background-color 0.3s;
+}
+.main__btn--pay:hover {
+  background-color: #766cf1;
+}
+.main__btn--cancel {
+  color: #717fa6;
+  margin-bottom: 4.8rem;
+  transition: color 0.3s;
+}
+.main__btn--cancel:hover {
+  color: #1f2e55;
+}
+@media screen and (max-width: 520px) {
+  body {
+    background-size: 640px 194px;
+    padding-top: 7.1rem;
+  }
+  .main__img {
+    width: 32.7rem;
+  }
+  .main__info {
+    width: 263px;
+  }
+  .main__playlist {
+    padding: 17px 16px 16px 16px;
+  }
+  .mian__playlist--wrapper {
+    margin-right: 3rem;
+  }
+  .wrapper__title {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .wrapper__price {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .main__playlist--link {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .main__btn--pay {
+    width: 279px;
+    padding: 15px 64px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
